@@ -1,0 +1,161 @@
+body {
+	font-family: "Nunito", sans-serif;
+	position: relative;
+	font-weight: 400;
+	height: 97.5vh;
+	color: #333;
+	background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+main {
+	width: 65rem;
+	height: 30rem;
+	background-color: rgba(255, 255, 255, 0.35);
+	box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(200px);
+	filter: blur();
+	border-radius: 9px;
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+}
+
+.player {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: all 0.75s;
+}
+
+h2 {
+	position: relative;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	font-weight: 300;
+	margin-bottom: 1rem;
+}
+
+.player--active {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+button {
+	position: absolute;
+	width: 150px;
+	padding: 10px;
+	border-radius: 25px;
+	border: none;
+	font-size: 15px;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 25px;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	cursor: pointer;
+	font-weight: 400;
+	transition: all 0.2s;
+	background-color: white;
+	background-color: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(10px);
+	border-radius: 50rem;
+	box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+button:active {
+	/* transform: translate(-50%, 2px); */
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+button:focus {
+	background-color: #fff;
+}
+
+.dice {
+	top: -80px;
+	left: -45px;
+	position: absolute;
+	width: 100px;
+	border-radius: 10px;
+	box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.score {
+	font-size: 5rem;
+	font-weight: 300;
+	color: #c7365f;
+	margin-bottom: 6rem;
+}
+.player--active {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+.player--active h2 {
+	font-weight: 700;
+}
+.player--active .score {
+	font-weight: 400;
+}
+
+.player--active .current {
+	opacity: 1;
+}
+.current {
+	background-color: #c7365f;
+	opacity: 0.8;
+	border-radius: 9px;
+	color: #fff;
+	width: 150px;
+	padding: 1rem;
+	text-align: center;
+	transition: all 0.75s;
+}
+
+.player--winner {
+	background-color: #2f2f2f;
+}
+
+.player--winner h2 {
+	font-weight: 700;
+	color: #c7365f;
+}
+
+.current-label {
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+	font-size: 1.7rem;
+	color: #ddd;
+}
+.current-score {
+	font-size: 2.5rem;
+}
+.btns {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+.Newgame {
+	top: -175px;
+}
+.roll {
+	top: 130px;
+	width: 175px;
+}
+.hold {
+	top: 195px;
+}
+
+.hidden {
+	display: none;
+}
+
+.win {
+	background-color: #fff;
+	padding: 10px;
+	width: 415px;
+	border-radius: 10px;
+	position: absolute;
+	top: -50%;
+	/* top: 0px; */
+	transition: all 0.4s;
+	text-align: center;
+}
